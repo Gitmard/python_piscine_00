@@ -1,7 +1,7 @@
-def ft_seed_inventory(seed_type: str, quantity: int, unit: str)->None:
-    if not unit in ["packets",  "grams", "area"]:
+def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
+    if unit not in ["packets",  "grams", "area"]:
         print("Unknown unit type")
-        return ;
+        return
     quantity_str: str
     if unit == "packets":
         quantity_str = f"{quantity} packets available"
